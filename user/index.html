@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>个人中心</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  <meta name="x5-page-mode" content="app">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="full-screen" content="yes">
+  <meta name="browsermode" content="application">
+  
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<link rel="stylesheet" href="../assets/css/user.css">
+</head>
+<body>
+  <div class="m-page g-user-index" style="padding-bottom: 1rem;">
+    <div class="m-main" style="background: #fff">
+      <div class="m-user-header">
+        <div class="p-header">
+          <!-- 有新消息添加类new-msg -->
+          <div class="left"></div>
+          <div class="middle">我的主页</div>
+          <a href="javascript:void(0);" class="right btn-msg"></a>
+        </div>
+        <div class="p-body">
+          <div class="avatar">
+            <img src="https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJiaWEqQVcUjOR7PB3aQ9UyhqACFzzGfl3Nf6jwZEGyGnu4gibzz0SeVN6WbhDmCgICDA4wRu5qrr8w/132" alt="">
+          </div>
+          <div class="info">
+            <p class="name s_overflow">假装没昵称</p>
+            <p class="level">普通用户</p>
+          </div>
+          <a href="/member/user/info.html" class="manage-link">账户管理</a>
+        </div>
+        <div class="p-footer">
+          <a class="user-nav-list" href="javascript:void(0);">
+          	<img  class="icon" src="../assets/images/vip.png">
+            <p class="tips">成为超级会员·每月拿20元红包</p>
+            <p class="desc">下单再返奖励金，每年约省1032元</p>
+          </a>
+        </div>
+      </div>
+      <div class="m-user-order">
+        <ul class="nav-order-list">
+          <li>
+            <a href="/member/order/index/type/1.html">
+              <span class="num">0</span>
+              <span class="status">待付款</span>
+            </a>
+          </li>
+          <li>
+            <a href="/member/order/index/type/3.html">
+              <span class="num">0</span>
+              <span class="status">待发货</span>
+            </a>
+          </li>
+          <li>
+            <a href="/member/order/index/type/4.html">
+              <span class="num">0</span>
+              <span class="status">待收货</span>
+            </a>
+          </li>
+          <li>
+            <a href="/member/order/index/type/5.html">
+                <span class="num">0</span>
+                <span class="status">评价</span>
+            </a>
+          </li>
+          <li>
+            <a href="/shop/after_sales/index.html">
+              <span class="num">
+                <img src="../assets/images/after_sale_icon.png" style="    width: 18px;margin-top: 3px;" alt="">
+              </span>
+              <span class="status" style="text-align: center;width: 2.65rem; margin-top: 5px;">退换/售后</span>
+            </a>
+          </li>
+          <li>
+            <a href="/member/order/index.html">
+              全部
+            </a>
+          </li>
+        </ul>
+      </div>
+        <!--<div class="m-user-order">
+            <ul class="nav-order-list">
+                <li>
+                    <a href="/shop/pieces_order/index/type/have_in_hand.html">
+                        <span class="num">0</span>
+                        <span class="status">拼团中</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/shop/pieces_order/index/type/success.html">
+                        <span class="num">0</span>
+                        <span class="status">已成功</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/shop/pieces_order/index/type/fail.html">
+                        <span class="num">0</span>
+                        <span class="status">已失效</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        拼团订单
+                    </a>
+                </li>
+            </ul>
+        </div>-->
+      <div class="m-user-order">
+          <ul class="nav-order-list">
+              <li>
+                  <a href="/shop/pieces_order/index/type/have_in_hand.html">
+                      <span class="num">0</span>
+                      <span class="status">拼团中</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="/shop/pieces_order/index/type/success.html">
+                      <span class="num">0</span>
+                      <span class="status">已成功</span>
+                  </a>
+              </li>
+
+              <li>
+                  <a href="/shop/pieces_order/index/type/fail.html">
+                      <span class="num">0</span>
+                      <span class="status">已失效</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="javascript:void(0)">
+                      拼团订单
+                  </a>
+              </li>
+          </ul>
+      </div>            
+      <div class="m-fun-list">
+        <ul class="fun-list">
+          <li>
+            <a href="/member/user/account.html">
+              <i>
+                <img src="../assets/images/icon-fun-wallet.png" alt="">
+              </i>
+              <span>钱包</span>
+            </a>
+          </li>
+          <li>
+            <a href="/recommend.html">
+              <i>
+                <img src="../assets/images/icon-fun-spread.png" alt="">
+              </i>
+              <span>推广注册</span>
+            </a>
+          </li>
+          <li>
+            <a href="/distribution/team/index.html">
+              <i>
+                <img src="../assets/images/icon-fun-team.png" alt="">
+              </i>
+              <span>我的团队</span>
+            </a>
+          </li>
+          <li>
+              <a href="/distribution/team/share.html">
+                  <i>
+                      <img src="../assets/images/icon-share.png" alt="">
+                  </i>
+                  <span>我的奖励</span>
+              </a>
+          </li>
+          <li>
+              <a href="/shop/collection/index.html">
+                  <i>
+                      <img src="../assets/images/icon-fun-collect.png" alt="">
+                  </i>
+                  <span>收藏</span>
+              </a>
+          </li>
+
+          <li>
+              <a href="/member/user/coupon/status/usable.html">
+                  <i>
+                      <img src="../assets/images/icon-fun-coupon.png" alt="">
+                  </i>
+                  <span>优惠券</span>
+              </a>
+          </li>
+          <li>
+              <a href="/member/address/index.html">
+                  <i>
+                      <img src="../assets/images/icon-fun-address.png" alt="">
+                  </i>
+                  <span>收货地址</span>
+              </a>
+          </li>
+          <li>
+              <a href="/member/safe/index.html">
+                  <i>
+                      <img src="../assets/images/icon-fun-setting.png" alt="">
+                  </i>
+                  <span>安全设置</span>
+              </a>
+          </li>
+          <li>
+              <a href="/member/feedback/index.html">
+                  <i>
+                      <img src="../assets/images/icon-fun-idea.png" alt="">
+                  </i>
+                  <span>意见反馈</span>
+              </a>
+          </li>
+          <li>
+              <a href="/cate/41.html">
+                  <i>
+                      <img src="../assets/images/icon-fun-about.png" alt="">
+                  </i>
+                  <span>帮助中心</span>
+              </a>
+          </li>
+                              <li>
+              <a href="/member/login/logout.html">
+                  <i>
+                      <img src="../assets/images/icon-fun-abort.png" alt="">
+                  </i>
+                  <span>退出登陆</span>
+              </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../assets/js/fontsize.js"></script>
+<script src="../assets/js/jquery.js"></script>
+</html>

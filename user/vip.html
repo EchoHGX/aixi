@@ -13,8 +13,8 @@
   <meta name="full-screen" content="yes">
   <meta name="browsermode" content="application">
 
-	<link rel="stylesheet" href="../assets/css/common.css">
-	<link rel="stylesheet" href="../assets/css/user.css">
+	<link rel="stylesheet" href="../assets/css/oth_common.css">
+	<link rel="stylesheet" href="../assets/css/oth_user.css">
 </head>
 <body class="bgf5">
 <header class="m-header fcff absolute">
@@ -39,7 +39,7 @@
     <p class="caption">团队奖励金额</p>
     <p class="price">40.5</p>
     <p class="canuse">可兑无门槛红包</p>
-    <a href="javascript:void(0);" class="send_price">提现奖励</a>
+    <a href="javascript:void(0);" class="send_price"  onclick="$('.alert-select').addClass('show')">提现奖励</a>
 
     <div class="vip_tips">
       <div class="tips_list">
@@ -148,11 +148,54 @@
     </div>
   </div>
 </main>
+
+<div class="alert-select show">
+  <div class="alert-bg"></div>
+  <div class="alert-container">
+    <p class="select-header">
+      选择支付方式
+      <span class="btn-close" onclick="$('.alert-select').removeClass('show')">取消</span>
+    </p>
+    <div class="select-body">
+      <ul class="select-card-list">
+        <li>
+            <input type="checkbox" name="" value="1">
+            <label>
+                <div class="pic">
+                    <img src="../assets/images/icon-zfb-pay.png" alt="">
+                </div>
+                <div class="info">
+                    <p class="name">支付宝</p>
+                </div>
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" name="" value="1">
+            <label>
+                <div class="pic">
+                    <img src="../assets/images/icon-wx-pay.png" alt="">
+                </div>
+                <div class="info">
+                    <p class="name">支付宝</p>
+                </div>
+            </label>
+        </li>
+      </ul>
+    </div>
+    <a href="javascript:void(0);"  class="sure-btn">下一步</a>
+  </div>
+</div>
 </body>
 <script src="../assets/js/fontsize.js"></script>
 <script src="../assets/js/jquery.js"></script>
 <script>
   $(function(){
+    $(".alert-select .select-card-list li").click(function(){
+      $(".alert-select .select-card-list li input").prop("checked",false);
+      $(this).children("input").prop("checked",true);
+    });
+
+
     var c = 0;
     var news_len=$(".vip_get .vip_tips .tips_list .tips_item").length;
     var subh = $(".vip_get .vip_tips .tips_list .tips_item").height();

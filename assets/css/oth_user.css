@@ -107,7 +107,7 @@
         width: 100%;
         height:2.773rem;
         background:linear-gradient(180deg,rgba(255,235,219,1) 0%,rgba(255,211,177,1) 100%);
-        padding-left: 3.925rem;
+        padding-left: 3.525rem;
         padding-top: .64rem;
       }
       .m-user-header .p-footer .user-nav-list .icon{
@@ -358,7 +358,7 @@
   border-right: 1px solid #D5BC8F;
   position: absolute;
   right: 0;
-  top: .213rem;
+  top: .313rem;
   transform: rotate(45deg);
 }
 .vip_head .head_cont .add_vip{
@@ -931,19 +931,67 @@
 .turntable .tt_bg{
   width: 100%;
   height: 100%;
-  background: #098 url(../images/turntable.svg) center center no-repeat;
+  background: url(../images/tbg.png) center top no-repeat;
   background-size: cover;
+  padding: 10%;
+}
+.turntable .turn_cont{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
 }
 .turntable .arr{
   display: block;
   width: 4.267rem;
-  height: 4.267rem;
+  height: 5.0rem;
   position: absolute;
-  top: 4.267rem;
+  bottom: 3.8rem;
   left: 4.267rem;
-  background: url(../images/pointer.png) center center no-repeat;
-  background-size: cover;
+  text-align: center;
+  background: url(../images/point.png) center bottom no-repeat;
+  background-size: 120% auto;
   transform-origin: center;
   transition: all 1s ease;
   transform: rotate(360deg);
+  padding-top: 1.28rem;
+}
+.turntable .arr p{
+  font-size: 0.683rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+}
+.turntable .arr span{
+  text-align: center;
+  font-size: 0.427rem;
+  color: #fff;
+  display: inline-block;
+  width: 2.133rem;
+  line-height: 0.768rem;
+  background: #FF8A00;
+  border-radius: 100px;
+}
+.turntable .tt_bg .turn_item{
+  position: absolute;
+  width: 5px;
+  height: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: 50% 100%;
+}
+.turntable .tt_bg .turn_item:nth-of-type(odd){
+  background: url(../images/rect.png) center center no-repeat;
+  background-size: 100% 100%;
+}
+.turntable .tt_bg .turn_item:nth-of-type(even){
+  background: url(../images/rect2.png) center center no-repeat;
+  background-size: 100% 100%;
+}
+.turntable .tt_bg .turn_item p{
+  font-size: 0.64rem;
+  color: #f00;
+  padding-top: .213rem;
+  text-align: center;
 }

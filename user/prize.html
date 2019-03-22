@@ -34,8 +34,37 @@
     <p class="prize_num">今天还剩<span>10</span>次抽奖机会</p>
     <p class="prize_jifen">我的积分:<span>2532</span></p>
     <div class="turntable">
-      <div class="tt_bg"></div>
+      <div class="tt_bg">
+        <div class="turn_cont">
+          <div class="turn_item">
+            <p>1</p>
+          </div>
+          <div class="turn_item">
+            <p>2</p>
+          </div>
+          <div class="turn_item">
+            <p>3</p>
+          </div>
+          <div class="turn_item">
+            <p>4</p>
+          </div>
+          <div class="turn_item">
+            <p>5</p>
+          </div>
+          <div class="turn_item">
+            <p>6</p>
+          </div>
+          <div class="turn_item">
+            <p>7</p>
+          </div>
+          <div class="turn_item">
+            <p>8</p>
+          </div>
+        </div>
+      </div>
       <a href="javascript:void(0);" class="arr">
+        <p>立即<br/>抽奖</p>
+        <span>-88积分</span>
       </a>
     </div>
   </div>
@@ -43,4 +72,24 @@
 
 </body>
 <script src="../assets/js/fontsize.js"></script>
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/turntable.js"></script>
+<script>
+  $(function(){
+
+    /**
+     *  @desc item_num:中奖等级，turn_num: 奖项个数
+     *  
+     */
+    new turntable({
+      turn:function(){
+        // 此处请求后端返回抽奖结果
+        this.item_num = 2;
+      },
+      turnEnd:function(){
+        alert("中奖等级"+this.item_num);
+      }
+    });
+  });
+</script>
 </html>

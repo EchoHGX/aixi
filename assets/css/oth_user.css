@@ -130,6 +130,32 @@
         line-height: 0.597rem;
       }
 
+
+.m-user-header .p-assets{
+  width: 100%;
+  background: #fff;
+  border-radius: 0.128rem;
+  height: 3.072rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.m-user-header .p-assets a{
+  display: block;
+  flex: 1;
+}
+.m-user-header .p-assets a .lab{
+  text-align: center;
+  font-size: 0.512rem;
+  color: #999;
+}
+.m-user-header .p-assets a .val{
+  font-size: .64rem;
+  color: #333;
+  text-align: center;
+  margin-top:  .213rem
+}
+
 .m-user-order .nav-order-list {
   display: -webkit-box;
   display: -webkit-flex;

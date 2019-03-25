@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>资讯</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  <meta name="x5-page-mode" content="app">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="full-screen" content="yes">
+  <meta name="browsermode" content="application">
+  <script src="../assets/js/fontsize.js"></script>
+	<link rel="stylesheet" href="../assets/css/oth_common.css">
+	<link rel="stylesheet" href="../assets/css/oth_index.css">
+	<link rel="stylesheet" href="../assets/css/swiper.min.css">
+</head>
+<body class="bgf5">
+<header class="oth_iheader">
+	<div href="javascript:void(0)" class="search_link">
+		<img class="logo" src="../assets/images/nav10.svg">
+		<p class="title">深圳爱晰小店</p>
+		<!-- <p class="name">毅力</p> -->
+		<a href="javascript:void(0);" class="sea_btn"></a>
+	</div>
+</header>
+<main class="main cleartop">
+	
+	<div class="zx_cont">
+  	<div class="flexr zx_tab">
+  		<a href="javascript:void(0);" class="active">最新</a>
+  		<a href="javascript:void(0);">热门</a>
+  		<a href="javascript:void(0);">推荐</a>
+  	</div>
+  	
+	  <div class="act_wrap">
+			<!-- <div class="title_has_more mt20 flexr pl15 pr15">
+	      <h2 class="title_ztxt">精彩活动<i></i></h2>
+	      <a href="javascript:void(0);" class="to_more">更多</a>
+	    </div> -->
+	    <div class="act_list">
+	    	<div class="flexr consult_item">
+	        <div class="consult_desc">
+	          <h5 class="consult_title ellipsis2">为什么有的区块没有打包交易，是矿工忘记了吗？</h5>
+	          <p class="other ellipsis">粤港澳大湾区规划终于来了。</p>
+	        </div>
+	        <div class="consult_img">
+	          <img src="../assets/images/ban1.svg">
+	        </div>
+	      </div>
+	      <div class="flexr consult_item">
+	        <div class="consult_desc">
+	          <h5 class="consult_title ellipsis">为什么有的区块没有打包交易</h5>
+	          <p class="other ellipsis2">粤港澳大湾区规划终于来了。，是矿工忘记了吗？</p>
+	        </div>
+	        <div class="consult_img">
+	          <img src="../assets/images/ban1.svg">
+	        </div>
+	      </div>
+	    </div>
+	    <div class="act_list">
+	    	<div class="flexr consult_item">
+	        <div class="consult_desc">
+	          <h5 class="consult_title ellipsis2">为什么有的区块没有打包交易，是矿工忘记了吗？</h5>
+	          <p class="other ellipsis">粤港澳大湾区规划终于来了。</p>
+	        </div>
+	        <div class="consult_img">
+	          <img src="../assets/images/ban1.svg">
+	        </div>
+	      </div>
+	      <div class="flexr consult_item">
+	        <div class="consult_desc">
+	          <h5 class="consult_title ellipsis">为什么有的区块没有打包交易</h5>
+	          <p class="other ellipsis2">粤港澳大湾区规划终于来了。，是矿工忘记了吗？</p>
+	        </div>
+	        <div class="consult_img">
+	          <img src="../assets/images/ban1.svg">
+	        </div>
+	      </div>
+	    </div>
+	    <div class="act_list">
+	    	<div class="flexr consult_item">
+	        <div class="consult_desc">
+	          <h5 class="consult_title ellipsis2">为什么有的区块没有打包交易，是矿工忘记了吗？</h5>
+	          <p class="other ellipsis">粤港澳大湾区规划终于来了。</p>
+	        </div>
+	        <div class="consult_img">
+	          <img src="../assets/images/ban1.svg">
+	        </div>
+	      </div>
+	      <div class="flexr consult_item">
+	        <div class="consult_desc">
+	          <h5 class="consult_title ellipsis">为什么有的区块没有打包交易</h5>
+	          <p class="other ellipsis2">粤港澳大湾区规划终于来了。，是矿工忘记了吗？</p>
+	        </div>
+	        <div class="consult_img">
+	          <img src="../assets/images/ban1.svg">
+	        </div>
+	      </div>
+	    </div>
+		</div>
+	</div>
+</main>
+</body>
+<script src="../assets/js/jquery.js"></script>
+<script>
+	$(function(){
+
+		var zx_h = $(".zx_cont").offset().top;
+		var slist1 = $(".act_list").eq(0).offset().top;
+		var slist2 = $(".act_list").eq(1).offset().top;
+		var slist3 = $(".act_list").eq(2).offset().top;
+    $(window).scroll(function(){
+			if($(window).scrollTop() > zx_h){
+				$(".zx_cont").addClass("intop");
+			}else{
+				$(".zx_cont").removeClass("intop");
+			}
+    });
+
+
+    $(".zx_cont .zx_tab a").click(function(){
+			var idx = $(this).index();
+			$("html,body").animate({scrollTop:$(".act_list").eq(idx).offset().top - 50 + "px"},500);
+			$(this).addClass("active").siblings(".active").removeClass("active");
+    });
+	});
+</script>
+</html>
